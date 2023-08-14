@@ -1,44 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Oxygen&display=swap');
 
+/* Custom Properties for Colors */
+
+:root {
+    --white: #fafafa;
+    --light-blue: #367ec8;
+}
 
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
+    border: 0;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
     font-family: 'Oxygen', 'Oswald', sans-serif;
 }
 
 body {
-    background-color: rgb(11,9,9);
+    background-color: var(--white);
 }
 
 img {
     width: 100%;
     height: 100%;
-    background-color: #367ec8;
+    background-color: var(--light-blue);
     position: relative;
 }
 
 main {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-}
-
-li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.form {
+.form-card {
     background-color: #fafafa;
     width: 55vw;
+}
+
+div > p {
+    padding: 60px 0px 5px 35px;
+    font-size: 30px;
+}
+
+.header-text {
+    width: 85%;
+    height: 35%;
+}
+
+form {
+    padding-left: 35px;
 }
