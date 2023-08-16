@@ -36,14 +36,14 @@ main {
 }
 
 img {
-    width: 100%;
+    width: 43vw;
     height: 100%;
     background-color: var(--green);
     position: relative;
 }
 
 .form-card {
-    width: 60vw;
+    width: 57vw;
     display: flex;
     flex-direction: column;
 }
@@ -51,15 +51,15 @@ img {
 div > p {
     display: flex;
     justify-content: center;
-    padding: 150px 0px 5px 60px;
-    font-size: 25px;
+    padding: 120px 0px 5px 60px;
+    font-size: 24px;
+    font-weight: 600;
     width: 75%;
 }
 
 .header-text {
     width: 100%;
-    height: 350px;
-    font-weight: 600;
+    height: 300px;
 }
 
 .container {
@@ -69,7 +69,10 @@ div > p {
 }
 
 .sign-up-now {
-    padding: 25px 0px 25px 60px;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 24px;
 }
 
 .form {
@@ -77,7 +80,7 @@ div > p {
     flex-wrap: wrap;
     flex: auto;
     width: 900px;
-    padding: 15px 0px 15px 40px;
+    padding: 20px 0px 15px 40px;
     gap: 20px 85px;
 }
 
@@ -86,8 +89,19 @@ div > p {
     flex-direction: column;
     padding: 0px 0px 5px 20px;
     width: 300px;
+    gap: 5px;
+}
+
+label {
+    font-size: 15px;
+    padding-left: 1px;
 }
 
 input {
     width: 250px;
+    height: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: inherit;
+    appearance: none;
 }
