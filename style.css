@@ -32,6 +32,7 @@ main {
     display: flex;
     width: 100%;
     height: calc(100vh - 4px);
+    background-color: var(--black);
 }
 
 img {
@@ -42,16 +43,9 @@ img {
 }
 
 .form-card {
-    background-color: var(--black);
     width: 60vw;
     display: flex;
     flex-direction: column;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    flex: auto;
 }
 
 div > p {
@@ -65,26 +59,35 @@ div > p {
 .header-text {
     width: 100%;
     height: 350px;
-    background-color: var(--black);
     font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.sign-up-now {
+    padding: 25px 0px 25px 60px;
 }
 
 .form {
     display: flex;
     flex-wrap: wrap;
     flex: auto;
-    width: 75%;
-    padding: 15px;
-    gap: 20px;
+    width: 900px;
+    padding: 15px 0px 15px 40px;
+    gap: 20px 85px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 15px 20px;
-    width: 45%;
+    padding: 0px 0px 5px 20px;
+    width: 300px;
 }
 
 input {
-    gap: 20px;
+    width: 250px;
 }
