@@ -13,7 +13,6 @@ html, body {
     margin: 0 auto;
     padding: 0;
     border: 0;
-    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     font-family: 'Oxygen', 'Oswald', sans-serif;
@@ -36,7 +35,7 @@ main {
 }
 
 img {
-    width: 40vw;
+    width: 100%;
     height: 100%;
     background-color: var(--green);
     position: relative;
@@ -45,6 +44,14 @@ img {
 .form-card {
     background-color: var(--black);
     width: 60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
 }
 
 div > p {
@@ -57,16 +64,27 @@ div > p {
 
 .header-text {
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: var(--black);
     font-weight: 600;
 }
 
 .form {
-    padding-left: 60px;
     display: flex;
-    padding: 25px;
-    margin: 16px;
     flex-wrap: wrap;
     flex: auto;
+    width: 75%;
+    padding: 15px;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 15px 20px;
+    width: 45%;
+}
+
+input {
+    gap: 20px;
 }
