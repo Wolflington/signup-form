@@ -111,3 +111,12 @@ input {
 button {
     margin-left: 60px;
 }
+
+input:focus {
+    border: 3px var(--green) solid;
+    outline: none;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid #ee2828;
+}
