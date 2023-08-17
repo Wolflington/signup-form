@@ -35,15 +35,15 @@
                         </div>
                         <div class = "input">
                             <label for = "phone">Phone Number</label>
-                            <input id = "phone" type = "tel" name = "phone" placeholder = " " required/>
+                            <input id = "phone" type = "tel" name = "phone" placeholder = " " pattern = "^[?:\+639]*(\d{9})|(\d{11})$" required/>
                         </div>
                         <div class = "input">
                             <label for = "password">Password</label>
-                            <input id = "password" type = "password" name = "password" placeholder = " " min = "6" max = "32" required/>
+                            <input id = "password" type = "password" name = "password" placeholder = " " pattern = ".{8, 32}" required/>
                         </div>
                         <div class = "input">
                             <label for = "confirm-pw">Confirm Password</label>
-                            <input type = "password" id="confirm-pw" name = "confirm-pw" placeholder = " " min = "6" max = "32" required/>
+                            <input type = "password" id="confirm-pw" name = "confirm-pw" placeholder = " " pattern = ".{8, 32}" required/>
                         </div>
                     </div>
                     <button type = "submit">Register</button>
