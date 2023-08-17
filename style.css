@@ -103,8 +103,10 @@ input {
     height: 15px;
     border: none;
     border-radius: 5px;
-    padding: 5px;
-    font-family: inherit;
+    padding: 10px;
+    font-family: "Oswald", "Oxygen", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     appearance: none;
 }
 
@@ -118,5 +120,44 @@ input:focus {
 }
 
 input:invalid:not(:focus):not(:placeholder-shown):invalid {
-    border: 2px solid #ee2828;
+    border: 3px solid red;
+}
+
+button {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    font-family: "Oswald", "Oxygen", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+button:active {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.log-in {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+    font-family: "Oswald", "Oxygen" sans-serif;
+    font-weight:bolder;
+}
+
+a:active, a:hover {
+    color: var(--white);
 }
